@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yassir's Ebook Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">Y</div>
+        <div>
+          <h1>Yassir's Ebook Store</h1>
+          <p class="tag">Affordable ebooks that change your life — KES 500 each</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#ebooks">Ebooks</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Grow Your Mind with Timeless Classics</h2>
+        <p>Buy best-selling, high-value ebooks. Pay via M-Pesa Till <strong>8606760</strong> and email your transaction ID to <a href="mailto:yassiryussuf215@gmail.com">yassiryussuf215@gmail.com</a> to receive your ebook.</p>
+        <a href="#ebooks" class="btn primary">Browse Ebooks</a>
+      </div>
+      <div class="hero-right">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=800&auto=format&fit=crop" alt="ebooks" />
+      </div>
+    </section>
+
+    <section id="ebooks" class="ebooks">
+      <h3>Available Ebooks — KES 500 each</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/71UypkUjStL.jpg" alt="Think and Grow Rich cover" />
+          <div class="card-body">
+            <h4>Think and Grow Rich</h4>
+            <p class="muted">Napoleon Hill's timeless guide to wealth, success, and mindset.</p>
+            <p class="price">KES 500</p>
+            <button class="btn disabled" disabled>Download (locked)</button>
+            <p class="small">Pay via M-Pesa Till <strong>8606760</strong>. Email payment confirmation to <a href="mailto:yassiryussuf215@gmail.com">yassiryussuf215@gmail.com</a> to receive your ebook.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/81tEgsxpNZS.jpg" alt="The Art of War cover" />
+          <div class="card-body">
+            <h4>The Art of War</h4>
+            <p class="muted">Sun Tzu's classic on strategy, leadership, and winning.</p>
+            <p class="price">KES 500</p>
+            <button class="btn disabled" disabled>Download (locked)</button>
+            <p class="small">Pay via M-Pesa Till <strong>8606760</strong>. Email payment confirmation to <a href="mailto:yassiryussuf215@gmail.com">yassiryussuf215@gmail.com</a> to receive your ebook.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/71vMT0beY6L.jpg" alt="How to Win Friends cover" />
+          <div class="card-body">
+            <h4>How to Win Friends and Influence People</h4>
+            <p class="muted">Dale Carnegie's essential book on communication and influence.</p>
+            <p class="price">KES 500</p>
+            <button class="btn disabled" disabled>Download (locked)</button>
+            <p class="small">Pay via M-Pesa Till <strong>8606760</strong>. Email payment confirmation to <a href="mailto:yassiryussuf215@gmail.com">yassiryussuf215@gmail.com</a> to receive your ebook.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h3>About Yassir</h3>
+      <p>I provide carefully selected ebooks that inspire, educate, and empower people to improve their lives. After you pay via M-Pesa, email your transaction ID and I'll send the ebook to your email.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact & Payment</h3>
+      <p>Support email: <a href="mailto:yassiryussuf215@gmail.com">yassiryussuf215@gmail.com</a></p>
+      <p>M-Pesa Till Number: <strong>8606760</strong></p>
+      <p class="muted">Payment flow: Pay KES 500 → Send transaction ID to the email above → You receive the ebook by email once payment is confirmed.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 Yassir. All rights reserved.</div>
+      <div class="muted">Powered by a simple static site — manual delivery after payment.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Insert current year
+    document.addEventListener('DOMContentLoaded', function(){
+      document.querySelectorAll('footer .container div:first-child').forEach(function(el){
+        el.innerHTML = '© ' + new Date().getFullYear() + ' Yassir. All rights reserved.';
+      });
+    });
+  </script>
+</body>
+</html>
