@@ -1,213 +1,222 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yassir's Ebook Store</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333; }
+    header { background:url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center/cover; color:white; text-align:center; padding:80px 20px; }
+    header h1 { font-size:2.5em; margin-bottom:10px; text-shadow:2px 2px 5px rgba(0,0,0,0.5); }
+    header p { font-size:1.2em; text-shadow:1px 1px 4px rgba(0,0,0,0.6); }
+    .container { width:90%; max-width:1200px; margin:auto; padding:40px 0; }
+    h2 { text-align:center; margin-bottom:20px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px; }
+    .book { background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); overflow:hidden; transition:transform 0.2s; }
+    .book:hover { transform:translateY(-5px); }
+    .book img { width:100%; height:350px; object-fit:cover; }
+    .book-content { padding:15px; }
+    .book-content h3 { font-size:1.1em; margin:10px 0; }
+    .book-content p { font-size:0.9em; margin:5px 0; }
+    .book-content a { display:block; text-align:center; background:#28a745; color:white; padding:10px; width:100%; border-radius:6px; font-size:0.95em; text-decoration:none; }
+    .book-content a:hover { background:#218838; }
+    .thankyou { font-size:0.85em; color:#666; margin-top:8px; font-style:italic; }
+    footer { text-align:center; padding:20px; background:#222; color:#aaa; margin-top:40px; font-size:0.9em; }
+    a { color:#28a745; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <div class="logo">Y</div>
-        <div>
-          <h1>Yassir's Ebook Store</h1>
-          <p class="tag">Affordable ebooks that change your life — KES 500 each</p>
-        </div>
+
+<header>
+  <h1>Welcome to Yassir’s Ebook Store 📚</h1>
+  <p>Knowledge at Your Fingertips – Invest in Yourself Today!</p>
+</header>
+
+<div class="container">
+  <h2>⭐ Featured Books</h2>
+  <div class="grid">
+
+    <!-- Book 1 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8225261-L.jpg" alt="Rich Dad Poor Dad">
+      <div class="book-content">
+        <h3>Rich Dad Poor Dad</h3>
+        <p>Robert Kiyosaki’s classic on financial education.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Rich%20Dad%20Poor%20Dad.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_blank">Pay with M-Pesa</a>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
       </div>
-      <nav class="nav">
-        <a href="#ebooks">Ebooks</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="cta">Contact</a>
-      </nav>
     </div>
-  </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="hero-left">
-        <h2>Grow Your Mind with Timeless Classics</h2>
-        <p>Buy best-selling, high-value ebooks. Pay via M-Pesa Till <strong>8606760</strong> and confirm via WhatsApp to receive your ebook.</p>
-        <a href="#ebooks" class="btn primary">Browse Ebooks</a>
+    <!-- Book 2 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/10594786-L.jpg" alt="Atomic Habits">
+      <div class="book-content">
+        <h3>Atomic Habits</h3>
+        <p>James Clear’s guide to building good habits daily.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Atomic%20Habits.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_blank">Pay with M-Pesa</a>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
       </div>
-      <div class="hero-right">
-        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=800&auto=format&fit=crop" alt="ebooks" />
+    </div>
+
+    <!-- Book 3 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/240726-L.jpg" alt="Think and Grow Rich">
+      <div class="book-content">
+        <h3>Think and Grow Rich</h3>
+        <p>Napoleon Hill’s proven principles of success.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Think%20and%20Grow%20Rich.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_blank">Pay with M-Pesa</a>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
       </div>
-    </section>
+    </div>
 
-    <section id="ebooks" class="ebooks">
-      <h3>Available Ebooks — KES 500 each</h3>
-      <div class="grid">
+  </div>
+</div>
 
-        <!-- Book 1 -->
-        <article class="card">
-          <h4>Pride and Prejudice</h4>
-          <p class="muted">Jane Austen's classic romance and social commentary.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Pride%20and%20Prejudice.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
+<div class="container">
+  <h2>📚 All Books</h2>
+  <div class="grid">
 
-        <!-- Book 2 -->
-        <article class="card">
-          <h4>Frankenstein</h4>
-          <p class="muted">Mary Shelley's gothic tale of science and humanity.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Frankenstein.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 3 -->
-        <article class="card">
-          <h4>Dracula</h4>
-          <p class="muted">Bram Stoker's timeless vampire horror novel.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Dracula.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 4 -->
-        <article class="card">
-          <h4>Moby Dick</h4>
-          <p class="muted">Herman Melville's epic of obsession and the sea.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Moby%20Dick.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 5 -->
-        <article class="card">
-          <h4>The Adventures of Sherlock Holmes</h4>
-          <p class="muted">Arthur Conan Doyle's detective stories of Sherlock Holmes.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20The%20Adventures%20of%20Sherlock%20Holmes.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 6 -->
-        <article class="card">
-          <h4>Alice’s Adventures in Wonderland</h4>
-          <p class="muted">Lewis Carroll's whimsical tale of a girl in Wonderland.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Alice's%20Adventures%20in%20Wonderland.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 7 -->
-        <article class="card">
-          <h4>Treasure Island</h4>
-          <p class="muted">Robert Louis Stevenson's pirate adventure novel.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Treasure%20Island.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 8 -->
-        <article class="card">
-          <h4>The Picture of Dorian Gray</h4>
-          <p class="muted">Oscar Wilde's novel of vanity and corruption.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20The%20Picture%20of%20Dorian%20Gray.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 9 -->
-        <article class="card">
-          <h4>Gulliver’s Travels</h4>
-          <p class="muted">Jonathan Swift's satire on human nature and society.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Gulliver's%20Travels.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 10 -->
-        <article class="card">
-          <h4>War and Peace</h4>
-          <p class="muted">Leo Tolstoy's monumental novel of war, peace, and humanity.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20War%20and%20Peace.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 11 -->
-        <article class="card">
-          <h4>Anna Karenina</h4>
-          <p class="muted">Leo Tolstoy's tragic tale of love and society.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Anna%20Karenina.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 12 -->
-        <article class="card">
-          <h4>Les Misérables</h4>
-          <p class="muted">Victor Hugo's epic of justice, love, and revolution.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Les%20Miserables.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 13 -->
-        <article class="card">
-          <h4>The Count of Monte Cristo</h4>
-          <p class="muted">Alexandre Dumas's tale of revenge and redemption.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20The%20Count%20of%20Monte%20Cristo.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 14 -->
-        <article class="card">
-          <h4>The Three Musketeers</h4>
-          <p class="muted">Alexandre Dumas's adventure of friendship and bravery.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20The%20Three%20Musketeers.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 15 -->
-        <article class="card">
-          <h4>Great Expectations</h4>
-          <p class="muted">Charles Dickens's story of ambition and growth.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Great%20Expectations.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 16 -->
-        <article class="card">
-          <h4>A Tale of Two Cities</h4>
-          <p class="muted">Charles Dickens's tale of sacrifice during the French Revolution.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20A%20Tale%20of%20Two%20Cities.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 17 -->
-        <article class="card">
-          <h4>The Time Machine</h4>
-          <p class="muted">H.G. Wells's science fiction of time travel.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20The%20Time%20Machine.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 18 -->
-        <article class="card">
-          <h4>The War of the Worlds</h4>
-          <p class="muted">H.G. Wells's alien invasion classic.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20The%20War%20of%20the%20Worlds.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 19 -->
-        <article class="card">
-          <h4>The Call of the Wild</h4>
-          <p class="muted">Jack London's tale of survival in the Yukon.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20The%20Call%20of%20the%20Wild.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
-        <!-- Book 20 -->
-        <article class="card">
-          <h4>Don Quixote</h4>
-          <p class="muted">Miguel de Cervantes's satirical adventure of chivalry.</p>
-          <p class="price">KES 500</p>
-          <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Don%20Quixote.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20My%20transaction%20ID:%20____" class="btn primary" target="_blank">Pay with M-Pesa</a>
-        </article>
-
+    <!-- Book 4 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/5546156-L.jpg" alt="The 7 Habits of Highly Effective People">
+      <div class="book-content">
+        <h3>The 7 Habits of Highly Effective People</h3>
+        <p>Stephen Covey’s timeless habits for success.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20The%207%20Habits%20of%20Highly%20Effective%20People.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_blank">Pay with M-Pesa</a>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
       </div>
-    </section>
+    </div>
 
-    <section id="about" class="about">
-      <h3>About Yassir</h3>
-      <p>I provide carefully selected ebooks that inspire, educate, and empower people to improve their lives. After you pay via M-Pesa, confirm your payment via WhatsApp and I'll send the ebook to your email.</p>
-    </section>
+    <!-- Book 5 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8225631-L.jpg" alt="The Intelligent Investor">
+      <div class="book-content">
+        <h3>The Intelligent Investor</h3>
+        <p>Benjamin Graham’s classic on investing wisely.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20The%20Intelligent%20Investor.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_blank">Pay with M-Pesa</a>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
 
-    <section id="contact" class="contact">
-      <h3>Contact & Payment</h3>
-      <p>Support email
+    <!-- Book 6 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8371740-L.jpg" alt="The Subtle Art of Not Giving a F*ck">
+      <div class="book-content">
+        <h3>The Subtle Art of Not Giving a F*ck</h3>
+        <p>Mark Manson’s no-nonsense self-help book.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20The%20Subtle%20Art%20of%20Not%20Giving%20a%20Fuck.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_blank">Pay with M-Pesa</a>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+
+    <!-- Book 7 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8228691-L.jpg" alt="How to Win Friends and Influence People">
+      <div class="book-content">
+        <h3>How to Win Friends and Influence People</h3>
+        <p>Dale Carnegie’s guide to communication & success.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20How%20to%20Win%20Friends%20and%20Influence%20People.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_blank">Pay with M-Pesa</a>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+
+    <!-- Book 8 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/10550264-L.jpg" alt="You Are a Badass">
+      <div class="book-content">
+        <h3>You Are a Badass</h3>
+        <p>Jen Sincero’s motivational guide to self-growth.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20You%20Are%20a%20Badass.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_blank">Pay with M-Pesa</a>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+
+    <!-- Book 9 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/6916876-L.jpg" alt="The Power of Positive Thinking">
+      <div class="book-content">
+        <h3>The Power of Positive Thinking</h3>
+        <p>Norman Vincent Peale’s book on mindset.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20The%20Power%20of%20Positive%20Thinking.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_blank">Pay with M-Pesa</a>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+
+    <!-- Book 10 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8235081-L.jpg" alt="Half of a Yellow Sun">
+      <div class="book-content">
+        <h3>Half of a Yellow Sun</h3>
+        <p>Chimamanda Ngozi Adichie’s award-winning novel.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Half%20of%20a%20Yellow%20Sun.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_blank">Pay with M-Pesa</a>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+
+    <!-- Book 11 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8225260-L.jpg" alt="Things Fall Apart">
+      <div class="book-content">
+        <h3>Things Fall Apart</h3>
+        <p>Chinua Achebe’s classic African literature.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Things%20Fall%20Apart.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_blank">Pay with M-Pesa</a>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+
+    <!-- Book 12 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8226191-L.jpg" alt="The Alchemist">
+      <div class="book-content">
+        <h3>The Alchemist</h3>
+        <p>Paulo Coelho’s inspiring tale of destiny.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20The%20Alchemist.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_blank">Pay with M-Pesa</a>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+
+    <!-- Book 13 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8234151-L.jpg" alt="48 Laws of Power">
+      <div class="book-content">
+        <h3>48 Laws of Power</h3>
+        <p>Robert Greene’s strategies for power and success.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%2048%20Laws%20of%20Power.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_blank">Pay with M-Pesa</a>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+
+    <!-- Book 14 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8234711-L.jpg" alt="Outliers">
+      <div class="book-content">
+        <h3>Outliers</h3>
+        <p>Malcolm Gladwell on the story of success.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Outliers.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_blank">Pay with M-Pesa</a>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+
+    <!-- Book 15 -->
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8234821-L.jpg" alt="Start with Why">
+      <div class="book-content">
+        <h3>Start with Why</h3>
+        <p>Simon Sinek on leadership and purpose.</p>
+        <p><strong>KES 500</strong></p>
+        <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Start%20with%20Why.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_
