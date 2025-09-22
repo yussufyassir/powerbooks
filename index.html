@@ -1,90 +1,307 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8378389545786284"
-     crossorigin="anonymous"></script>
-   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yassir's Ebook Store</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333; }
+    header { background:url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center/cover; color:white; text-align:center; padding:80px 20px; }
+    header h1 { font-size:2.5em; margin-bottom:10px; text-shadow:2px 2px 5px rgba(0,0,0,0.5); }
+    header p { font-size:1.2em; text-shadow:1px 1px 4px rgba(0,0,0,0.6); }
+    .container { width:90%; max-width:1200px; margin:auto; padding:40px 0; }
+    h2 { text-align:center; margin-bottom:20px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px; }
+    .book { background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); overflow:hidden; transition:transform 0.2s; }
+    .book:hover { transform:translateY(-5px); }
+    .book img { width:100%; height:350px; object-fit:cover; }
+    .book-content { padding:15px; }
+    .book-content h3 { font-size:1.1em; margin:10px 0; }
+    .book-content p { font-size:0.9em; margin:5px 0; }
+    .book-content button { background:#28a745; color:white; border:none; padding:10px; width:100%; border-radius:6px; cursor:not-allowed; font-size:0.95em; }
+    .thankyou { font-size:0.85em; color:#666; margin-top:8px; font-style:italic; }
+    footer { text-align:center; padding:20px; background:#222; color:#aaa; margin-top:40px; font-size:0.9em; }
+    a { color:#28a745; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <div class="logo">Y</div>
-        <div>
-          <h1>Yassir's Ebook Store</h1>
-          <p class="tag">Affordable ebooks that change your life — KES 500 each</p>
-        </div>
+
+<header>
+  <h1>Welcome to Yassir’s Ebook Store 📚</h1>
+  <p>Knowledge at Your Fingertips – Invest in Yourself Today!</p>
+</header>
+
+<div class="container">
+  <h2>⭐ Featured Books</h2>
+  <div class="grid">
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8225261-L.jpg" alt="Rich Dad Poor Dad">
+      <div class="book-content">
+        <h3>Rich Dad Poor Dad</h3>
+        <p>Robert Kiyosaki’s classic on financial education.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
       </div>
-       <section class="books-grid">
-          
-    <section id="ebooks" class="ebooks">
-      <h3>Available Ebooks — KES 500 each</h3>
-      <div class="grid">
-        <article class="card">
-          <img src="https://m.media-amazon.com/images/I/71UypkUjStL.jpg" alt="Think and Grow Rich cover" />
-          <div class="card-body">
-            <h4>Think and Grow Rich</h4>
-            <p class="muted">Napoleon Hill's timeless guide to wealth, success, and mindset.</p>
-            <p class="price">KES 500</p>
-            <button class="btn disabled" disabled>Download (locked)</button>
-            <p class="small">Pay via M-Pesa Till <strong>8606760</strong>. Email payment confirmation to <a href="mailto:yassiryussuf215@gmail.com">yassiryussuf215@gmail.com</a> to receive your ebook.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="https://m.media-amazon.com/images/I/81tEgsxpNZS.jpg" alt="The Art of War cover" />
-          <div class="card-body">
-            <h4>The Art of War</h4>
-            <p class="muted">Sun Tzu's classic on strategy, leadership, and winning.</p>
-            <p class="price">KES 500</p>
-            <button class="btn disabled" disabled>Download (locked)</button>
-            <p class="small">Pay via M-Pesa Till <strong>8606760</strong>. Email payment confirmation to <a href="mailto:yassiryussuf215@gmail.com">yassiryussuf215@gmail.com</a> to receive your ebook.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="https://m.media-amazon.com/images/I/71vMT0beY6L.jpg" alt="How to Win Friends cover" />
-          <div class="card-body">
-            <h4>How to Win Friends and Influence People</h4>
-            <p class="muted">Dale Carnegie's essential book on communication and influence.</p>
-            <p class="price">KES 500</p>
-            <button class="btn disabled" disabled>Download (locked)</button>
-            <p class="small">Pay via M-Pesa Till <strong>8606760</strong>. Email payment confirmation to <a href="mailto:yassiryussuf215@gmail.com">yassiryussuf215@gmail.com</a> to receive your ebook.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <h3>About Yassir</h3>
-      <p>I provide carefully selected ebooks that inspire, educate, and empower people to improve their lives. After you pay via M-Pesa, email your transaction ID and I'll send the ebook to your email.</p>
-    </section>
-
-    <section id="contact" class="contact">
-      <h3>Contact & Payment</h3>
-      <p>Support email: <a href="mailto:yassiryussuf215@gmail.com">yassiryussuf215@gmail.com</a></p>
-      <p>M-Pesa Till Number: <strong>8606760</strong></p>
-      <p class="muted">Payment flow: Pay KES 500 → Send transaction ID to the email above → You receive the ebook by email once payment is confirmed.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div>© 2025 Yassir. All rights reserved.</div>
-      <div class="muted">Powered by a simple static site — manual delivery after payment.</div>
     </div>
-  </footer>
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/10594786-L.jpg" alt="Atomic Habits">
+      <div class="book-content">
+        <h3>Atomic Habits</h3>
+        <p>James Clear’s guide to building good habits daily.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/240726-L.jpg" alt="Think and Grow Rich">
+      <div class="book-content">
+        <h3>Think and Grow Rich</h3>
+        <p>Napoleon Hill’s proven principles of success.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <script>
-    // Insert current year
-    document.addEventListener('DOMContentLoaded', function(){
-      document.querySelectorAll('footer .container div:first-child').forEach(function(el){
-        el.innerHTML = '© ' + new Date().getFullYear() + ' Yassir. All rights reserved.';
-      });
-    });
-  </script>
+<div class="container">
+  <h2>📚 All Books</h2>
+  <div class="grid">
+
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8225261-L.jpg" alt="Rich Dad Poor Dad">
+      <div class="book-content">
+        <h3>Rich Dad Poor Dad</h3>
+        <p>Robert Kiyosaki’s classic on financial education.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/10594786-L.jpg" alt="Atomic Habits">
+      <div class="book-content">
+        <h3>Atomic Habits</h3>
+        <p>James Clear’s guide to building good habits daily.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/240726-L.jpg" alt="Think and Grow Rich">
+      <div class="book-content">
+        <h3>Think and Grow Rich</h3>
+        <p>Napoleon Hill’s proven principles of success.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/5546156-L.jpg" alt="The 7 Habits of Highly Effective People">
+      <div class="book-content">
+        <h3>The 7 Habits of Highly Effective People</h3>
+        <p>Stephen Covey’s timeless habits for success.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8225631-L.jpg" alt="The Intelligent Investor">
+      <div class="book-content">
+        <h3>The Intelligent Investor</h3>
+        <p>Benjamin Graham’s classic on investing wisely.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8371740-L.jpg" alt="The Subtle Art of Not Giving a F*ck">
+      <div class="book-content">
+        <h3>The Subtle Art of Not Giving a F*ck</h3>
+        <p>Mark Manson’s no-nonsense self-help book.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8228691-L.jpg" alt="How to Win Friends and Influence People">
+      <div class="book-content">
+        <h3>How to Win Friends and Influence People</h3>
+        <p>Dale Carnegie’s guide to communication & success.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/10550264-L.jpg" alt="You Are a Badass">
+      <div class="book-content">
+        <h3>You Are a Badass</h3>
+        <p>Jen Sincero’s motivational guide to self-growth.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/6916876-L.jpg" alt="The Power of Positive Thinking">
+      <div class="book-content">
+        <h3>The Power of Positive Thinking</h3>
+        <p>Norman Vincent Peale’s book on mindset.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8235081-L.jpg" alt="Half of a Yellow Sun">
+      <div class="book-content">
+        <h3>Half of a Yellow Sun</h3>
+        <p>Chimamanda Ngozi Adichie’s award-winning novel.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8225260-L.jpg" alt="Things Fall Apart">
+      <div class="book-content">
+        <h3>Things Fall Apart</h3>
+        <p>Chinua Achebe’s classic African literature.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8226191-L.jpg" alt="The Alchemist">
+      <div class="book-content">
+        <h3>The Alchemist</h3>
+        <p>Paulo Coelho’s inspiring tale of destiny.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8234151-L.jpg" alt="48 Laws of Power">
+      <div class="book-content">
+        <h3>48 Laws of Power</h3>
+        <p>Robert Greene’s strategies for power and success.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8234711-L.jpg" alt="Outliers">
+      <div class="book-content">
+        <h3>Outliers</h3>
+        <p>Malcolm Gladwell on the story of success.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8234821-L.jpg" alt="Start with Why">
+      <div class="book-content">
+        <h3>Start with Why</h3>
+        <p>Simon Sinek on leadership and purpose.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/10590587-L.jpg" alt="Can’t Hurt Me">
+      <div class="book-content">
+        <h3>Can’t Hurt Me</h3>
+        <p>David Goggins’ journey of discipline and resilience.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8225263-L.jpg" alt="The Richest Man in Babylon">
+      <div class="book-content">
+        <h3>The Richest Man in Babylon</h3>
+        <p>Timeless lessons on wealth building.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/10548889-L.jpg" alt="Zero to One">
+      <div class="book-content">
+        <h3>Zero to One</h3>
+        <p>Peter Thiel’s book on startups and innovation.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/8371987-L.jpg" alt="Deep Work">
+      <div class="book-content">
+        <h3>Deep Work</h3>
+        <p>Cal Newport on focused success in a distracted world.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/id/10550324-L.jpg" alt="Crushing It!">
+      <div class="book-content">
+        <h3>Crushing It!</h3>
+        <p>Gary Vaynerchuk’s guide to building personal brands.</p>
+        <p><strong>KES 500</strong></p>
+        <button disabled>Pay with M-Pesa (Till 8606760)</button>
+        <p class="thankyou">Thank you for supporting knowledge and growth 🚀</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="container" style="text-align:center; margin-top:40px;">
+  <p>📧 Need help? <a href="mailto:yassiryussuf215@gmail.com">Email Support</a></p>
+</div>
+
+<footer>
+  <p>© 2025 Yassir’s Ebook Store. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
