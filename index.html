@@ -7,6 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yassir's Ebook Store</title>
   <style>
+    <script>
+  function sendToWhatsApp(event) {
+    event.preventDefault();
+    const book = document.getElementById("bookName").value;
+    const name = document.getElementById("userName").value;
+    const email = document.getElementById("userEmail").value || "Not provided";
+
+    const message = `Hello Yassir! 📚%0AMy name is ${name}.%0AI would like to request the book: "${book}".%0AEmail: ${email}`;
+    const whatsappURL = `https://wa.me/254795718266?text=${message}`;
+    window.open(whatsappURL, "_blank");
+  }
+</script>
+
     body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333; }
     header { background:url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center/cover; color:white; text-align:center; padding:80px 20px; }
     header h1 { font-size:2.5em; margin-bottom:10px; text-shadow:2px 2px 5px rgba(0,0,0,0.5); }
@@ -222,3 +235,28 @@
         <p>Simon Sinek on leadership and purpose.</p>
         <p><strong>KES 500</strong></p>
         <a href="https://wa.me/254795718266?text=Hello%20Yassir!%20I%20want%20to%20buy%20Start%20with%20Why.%20I%20have%20paid%20KES%20500%20to%20Till%208606760.%20Here%20is%20my%20transaction%20ID:%20____" target="_
+<div class="container" id="request" style="margin-top:60px; text-align:center;">
+  <h2 style="font-size:2em; margin-bottom:10px;">📚 Request a Book</h2>
+  <p style="font-size:1.1em; color:#555; margin-bottom:30px;">
+    Didn’t find the book you’re looking for? Request it here and we’ll get it for you!
+  </p>
+
+  <form onsubmit="sendToWhatsApp(event)" style="max-width:500px; margin:0 auto; text-align:left; background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+    <label for="bookName" style="display:block; margin-bottom:8px; font-weight:bold;">📖 Book Title</label>
+    <input type="text" id="bookName" placeholder="Enter the book title..." required 
+           style="width:100%; padding:12px; border:1px solid #ccc; border-radius:6px; margin-bottom:15px; font-size:1em;">
+
+    <label for="userName" style="display:block; margin-bottom:8px; font-weight:bold;">👤 Your Name</label>
+    <input type="text" id="userName" placeholder="Your name" required 
+           style="width:100%; padding:12px; border:1px solid #ccc; border-radius:6px; margin-bottom:15px; font-size:1em;">
+
+    <label for="userEmail" style="display:block; margin-bottom:8px; font-weight:bold;">📧 Your Email (optional)</label>
+    <input type="email" id="userEmail" placeholder="Your email (optional)" 
+           style="width:100%; padding:12px; border:1px solid #ccc; border-radius:6px; margin-bottom:20px; font-size:1em;">
+
+    <button type="submit" 
+            style="background:#28a745; color:white; padding:14px; border:none; border-radius:6px; width:100%; font-size:1.1em; cursor:pointer; transition:background 0.3s;">
+      📩 Send Book Request via WhatsApp
+    </button>
+  </form>
+</div>
